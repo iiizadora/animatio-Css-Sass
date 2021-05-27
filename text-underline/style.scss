@@ -15,20 +15,60 @@
     .quote-titlle__text {
       padding: 30px 0;
       text-align: center;
+      position: relative;
       p {
         @include text-title;
+        // text-decoration:0.3rem underline $line-underline;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 70%;
+          height: 2px;
+          width: 80%;
+          left: 10%;
+          background: linear-gradient(
+            43deg,
+            $line-underline3 0%,
+            $line-underline4 56%,
+            $line-underline3 100%
+          );
+        }
       }
     }
   }
 
   .quote-item {
+    /**/
     .quote-1 {
       @include box-container($color-box2);
-            
+      position: relative;
+
       .custom-underline {
         @include text-title;
-      }
 
+        &::after {
+          content: "";
+          position: absolute;
+          top: 75%;
+          height: 2px;
+          width: 70px;
+          left: 265px;
+          background-color: $line-underline2;
+          transition: 0.4s ease-out all 0.1s;
+        }
+
+        &:hover {
+          width: 20%;
+          left: 10%;
+          transition: 0.5s ease all;
+          &::after {
+            width: 55%;
+            left: 22%;
+            transition: 0.5s ease all;
+          }
+        }
+      }
     }
     .quote-2 {
       @include box-container($color-box3);
@@ -36,7 +76,6 @@
       .custom-underline {
         @include text-title;
       }
-
     }
     .quote-3 {
       @include box-container($color-box4);
@@ -44,7 +83,6 @@
       .custom-underline {
         @include text-title;
       }
-
     }
     .quote-4 {
       @include box-container($color-box5);
@@ -52,7 +90,6 @@
       .custom-underline {
         @include text-title;
       }
-
     }
     .quote-5 {
       @include box-container($color-box6);
@@ -60,7 +97,6 @@
       .custom-underline {
         @include text-title;
       }
-
     }
   }
 }

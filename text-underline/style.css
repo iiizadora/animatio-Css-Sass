@@ -23,7 +23,7 @@ a {
   background: #e3e7f1;
 }
 .quote-container .quote-title {
-  background: #35013f;
+  background: #a371f7;
   width: 600px;
   height: auto;
   margin-bottom: 20px;
@@ -31,6 +31,7 @@ a {
 .quote-container .quote-title .quote-titlle__text {
   padding: 30px 0;
   text-align: center;
+  position: relative;
 }
 .quote-container .quote-title .quote-titlle__text p {
   color: #edeef7;
@@ -38,10 +39,29 @@ a {
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
+.quote-container .quote-title .quote-titlle__text p:hover, .quote-container .quote-title .quote-titlle__text p:focus, .quote-container .quote-title .quote-titlle__text p:active {
+  color: #edeef7;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+.quote-container .quote-title .quote-titlle__text p::after {
+  content: "";
+  position: absolute;
+  top: 70%;
+  height: 2px;
+  width: 80%;
+  left: 10%;
+  background: linear-gradient(43deg, #940fae 0%, #32136a 56%, #940fae 100%);
+}
+.quote-container .quote-item {
+  /**/
+}
 .quote-container .quote-item .quote-1 {
-  background: #9b45e4;
+  background: #8957e5;
   padding: 30px 0;
   text-align: center;
+  position: relative;
 }
 .quote-container .quote-item .quote-1 .custom-underline {
   color: #edeef7;
@@ -49,8 +69,34 @@ a {
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
+.quote-container .quote-item .quote-1 .custom-underline:hover, .quote-container .quote-item .quote-1 .custom-underline:focus, .quote-container .quote-item .quote-1 .custom-underline:active {
+  color: #edeef7;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+.quote-container .quote-item .quote-1 .custom-underline::after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  height: 2px;
+  width: 70px;
+  left: 265px;
+  background-color: #e6dcfd;
+  transition: 0.4s ease-out all 0.1s;
+}
+.quote-container .quote-item .quote-1 .custom-underline:hover {
+  width: 20%;
+  left: 10%;
+  transition: 0.5s ease all;
+}
+.quote-container .quote-item .quote-1 .custom-underline:hover::after {
+  width: 55%;
+  left: 22%;
+  transition: 0.5s ease all;
+}
 .quote-container .quote-item .quote-2 {
-  background: #511281;
+  background: #6e40c9;
   padding: 30px 0;
   text-align: center;
 }
@@ -60,8 +106,14 @@ a {
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
+.quote-container .quote-item .quote-2 .custom-underline:hover, .quote-container .quote-item .quote-2 .custom-underline:focus, .quote-container .quote-item .quote-2 .custom-underline:active {
+  color: #edeef7;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
 .quote-container .quote-item .quote-3 {
-  background: #6930c3;
+  background: #553098;
   padding: 30px 0;
   text-align: center;
 }
@@ -71,8 +123,14 @@ a {
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
+.quote-container .quote-item .quote-3 .custom-underline:hover, .quote-container .quote-item .quote-3 .custom-underline:focus, .quote-container .quote-item .quote-3 .custom-underline:active {
+  color: #edeef7;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
 .quote-container .quote-item .quote-4 {
-  background: #892cdc;
+  background: #3c1e70;
   padding: 30px 0;
   text-align: center;
 }
@@ -82,12 +140,24 @@ a {
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
+.quote-container .quote-item .quote-4 .custom-underline:hover, .quote-container .quote-item .quote-4 .custom-underline:focus, .quote-container .quote-item .quote-4 .custom-underline:active {
+  color: #edeef7;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
 .quote-container .quote-item .quote-5 {
-  background: #52057b;
+  background: #271052;
   padding: 30px 0;
   text-align: center;
 }
 .quote-container .quote-item .quote-5 .custom-underline {
+  color: #edeef7;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+.quote-container .quote-item .quote-5 .custom-underline:hover, .quote-container .quote-item .quote-5 .custom-underline:focus, .quote-container .quote-item .quote-5 .custom-underline:active {
   color: #edeef7;
   font-size: 2.4rem;
   font-weight: 600;
