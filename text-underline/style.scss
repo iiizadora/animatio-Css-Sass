@@ -1,0 +1,66 @@
+@import "./reset.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
+
+.quote-container {
+  height: 100vh;
+  @include flex-simple;
+  background: $background-color;
+
+  .quote-title {
+    background: $color-box1;
+    width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    .quote-titlle__text {
+      padding: 30px 0;
+      text-align: center;
+      p {
+        @include text-title;
+      }
+    }
+  }
+
+  .quote-item {
+    .quote-1 {
+      @include box-container($color-box2);
+            
+      .custom-underline {
+        @include text-title;
+      }
+
+    }
+    .quote-2 {
+      @include box-container($color-box3);
+
+      .custom-underline {
+        @include text-title;
+      }
+
+    }
+    .quote-3 {
+      @include box-container($color-box4);
+
+      .custom-underline {
+        @include text-title;
+      }
+
+    }
+    .quote-4 {
+      @include box-container($color-box5);
+
+      .custom-underline {
+        @include text-title;
+      }
+
+    }
+    .quote-5 {
+      @include box-container($color-box6);
+
+      .custom-underline {
+        @include text-title;
+      }
+
+    }
+  }
+}
